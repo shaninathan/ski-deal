@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>skidil</title>
+    <link rel="icon" href="../media/logo.png" />
+    <link href="../STYLE/עיצןב אתר הסקי.css" rel="stylesheet" />
+    <script src="../JS/JavaScript.js"></script>
+</head>
+<body dir="rtl" lang="he">
+    <header class="container-fluid">
+        <div class="container">
+            <div class="logo">
+                <a href="דף הבית.html"><img src="../media/logo.png" /></a>
+            </div>
+            <nav>
+                <h2>אתר הסקי למטייל-דף הבית</h2>
+                <a href="דף הבית.html">דף הבית</a>|
+                <a href="אתר הסקי גודאורי.html">אתר הסקי גודאורי</a>|
+                <a href="העברות.html">העברות</a>|
+                <a href="מפת האתר.html">מפת האתר</a>
+            </nav>
+            <form>
+                <input type="search" name="search" placeholder="חפש באתר">
+                <button type="submit">חיפוש</button>
+            </form>
+        </div>
+    </header>
+
+
+    <div id="up"></div>
+    <main class="container-fluid center mainsiz">
+        <div class="container">
+            <div class="image-container">
+                <div class="row">
+                    <div class="image-item">
+                        <img class="column" src="../media/IMG/1.jpg" alt="Image 1" onclick="ShowBigImg(this)">
+                        <div>השקעיה בגודאורי</div>
+                    </div>
+                    <div class="image-item">
+                        <img class="column" src="../media/IMG/10.jpg" alt="Image 2" onclick="ShowBigImg(this)">
+                        <div>מקום הכניסה לרכבלים</div>
+                    </div>
+                    <div class="image-item">
+                        <img class="column" src="../media/IMG/5.1.jpg" alt="Image 3" onclick="ShowBigImg(this)">
+                        <div>גולש באתר בסנואובורד</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="image-item">
+                        <img class="column" src="../media/IMG/12.jpg" alt="Image 4" onclick="ShowBigImg(this)">
+                        <div>מטייל משקיף להרים</div>
+                    </div>
+                    <div class="image-item">
+                        <img class="column" src="../media/IMG/2.jpg" alt="Image 5" onclick="ShowBigImg(this)">
+                        <div>גולש באמצע פעלול</div>
+                    </div>
+                    <div class="image-item">
+                        <img class="column" src="../media/IMG/3.jpg" alt="Image 6" onclick="ShowBigImg(this)">
+                        <div>טיול רגלי באתר</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="image-item">
+                        <img class="column" src="../media/IMG/4.jpg" alt="Image 7" onclick="ShowBigImg(this)">
+                        <div>סיום מסלול רכבל</div>
+                    </div>
+                    <div class="image-item">
+                        <img class="column" src="../media/IMG/8.1.jpg" alt="Image 8" onclick="ShowBigImg(this)">
+                        <div>גולש בפסגת ההר</div>
+                    </div>
+                    <div class="image-item">
+                        <img class="column" src="../media/IMG/6.jpg" alt="Image 9" onclick="ShowBigImg(this)">
+                        <div>גולש מעל אחד הרכבלים</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="image-item">
+                        <img class="column" src="../media/IMG/10.1.jpg" alt="Image 10" onclick="ShowBigImg(this)">
+                        <div>פעילות הרכבלים</div>
+                    </div>
+                    <div class="image-item">
+                        <img class="column" src="../media/IMG/11.1.jpg" alt="Image 11" onclick="ShowBigImg(this)">
+                        <div>עוד מהרכבלים</div>
+                    </div>
+                    <div class="image-item">
+                        <img class="column" src="../media/IMG/12.1.jpeg" alt="Image 12" onclick="ShowBigImg(this)">
+                        <div>האתר בזמן שלג כבד</div>
+                    </div>
+                </div>
+            </div>
+        </div>>
+    </main>
+
+    <div id="divImg">
+        <img id="BigImg" />
+        <img id="x" src="../media/x.png" onclick="hideBigImg()" />
+    </div>
+    <div id="up-container">
+        <a href="#up" id="up-link">
+            <img id="image-up-container" src="../media/UP.jpeg" title="גלילה מעלה" />
+        </a>
+    </div>
+
+    <footer>
+        &copy; כל הזכיות שמורות
+        <span>פתוחים לקהל בימי א-ה מ9:00 בבוקר ועד 10:00 בלילה </span>
+        <a href="mailto:service@skideal.co.il" target="_blank">יצירת קשר במייל</a> <br />
+    </footer>
+</body>
+</html>

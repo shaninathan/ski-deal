@@ -1,0 +1,193 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f5f5, #dcdcdc, #b0c4de, #d3d3d3, #778899, #c0c0c0, #a9a9a9);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0 16px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header {
+    min-height: 80px;
+    background-color: rgba(192, 192, 192, 0.9);
+    color: #717181;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+    header .container {
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    header nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0 5px;
+    }
+
+        header nav a:hover {
+            color: #717181;
+        }
+
+.logo img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.strip {
+    padding: 40px 20px;
+    margin-top: 120px;
+}
+
+    .strip .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .strip .text {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    .strip .image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+footer {
+    background-color: rgba(192, 192, 192, 0.9);
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    footer span {
+        display: inline-block;
+        border-radius: 15%;
+        padding: 5px 10px;
+        margin: 10px;
+        background-color: transparent;
+    }
+
+    footer a {
+        margin: 10px;
+    }
+
+    footer * {
+        vertical-align: middle;
+    }
+.form-container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-container form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .form-container label {
+        flex: 1 1 100%;
+        margin-bottom: 5px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="number"],
+    .form-container input[type="date"],
+    .form-container button {
+        flex: 1 1 45%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .form-container button {
+        flex: 1 1 100%;
+        background-color: #717181;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .form-container button:hover {
+            background-color: #575757;
+        }
+@media screen and (max-width: 800px) {
+    main .nav {
+        width: 100%;
+       
+    }
+    body {
+        padding-top: 150px;
+    }
+
+    header form {
+        top: 0;
+    }
+
+    .logo img {
+        margin-bottom: 20px;
+        max-width: 10%;
+    }
+
+    header form {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header .simun {
+        display: block;
+    }
+
+}

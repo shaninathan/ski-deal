@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>skidil</title>
+    <link rel="icon" href="../media/logo.png" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f5f5, #dcdcdc, #b0c4de, #d3d3d3, #778899, #c0c0c0, #a9a9a9);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            font-family: sans-serif;
+        }
+
+        .container-fluid {
+            width: 100%;
+            padding: 0 16px;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        header {
+            min-height: 80px;
+            background-color: rgba(192, 192, 192, 0.9);
+            color: #717181;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+            header .container {
+                padding: 8px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            header nav a {
+                color: white;
+                text-decoration: none;
+                padding: 0 5px;
+            }
+
+                header nav a:hover {
+                    color: #717181;
+                }
+
+        .logo img {
+            max-width: 20%;
+            height: auto;
+            border-radius: 100px;
+            margin-left: auto;
+            margin-right: 20px;
+        }
+
+        .displayno {
+            display: none;
+        }
+
+        .up-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .up-link img {
+            width: 50px;
+            height: auto;
+            border-radius: 70px;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        footer {
+            background-color: rgba(192, 192, 192, 0.9);
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+            footer span {
+                display: inline-block;
+                border-radius: 15%;
+                padding: 5px 10px;
+                margin: 10px;
+                background-color: transparent;
+            }
+
+            footer a {
+                margin: 10px;
+            }
+
+            footer * {
+                vertical-align: middle;
+            }
+
+        .main-content {
+            margin-top: 200px; /* מרווח של 200 פיקסלים מהחלק העליון */
+            text-align: center;
+            padding: 20px;
+        }
+
+            .main-content img {
+                width: 900px;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                margin-bottom: 20px;
+                animation: pulse 2s ease-in-out 6;
+            }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .main-content a {
+            display: inline-block;
+            background-color: #717181;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+            .main-content a:hover {
+                background-color: #575757;
+            }
+
+        .audio-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+            .audio-container audio {
+                width: 100%;
+                max-width: 300px;
+            }
+
+        @media screen and (max-width: 600px) {
+            header .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .logo img {
+                max-width: 20%;
+                margin-bottom: 10px;
+            }
+
+            header nav h2 {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            header nav a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+
+            header form {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .main-content img {
+                width: 100%;
+            }
+
+            .main-content a {
+                font-size: 14px;
+                padding: 5px 10px; /* שינוי padding */
+            }
+
+            footer span, footer a {
+                font-size: 12px;
+            }
+
+            .up-link img {
+                width: 25px;
+                height: auto;
+            }
+
+            .audio-container audio {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body dir="rtl" lang="he">
+    <header class="container-fluid">
+        <div class="container">
+            <div class="logo">
+                <a href="דף הבית.html"><img src="../media/logo.png" /></a>
+            </div>
+            <nav>
+                <h2>אתר הסקי למטייל-דף הבית</h2>
+                <a href="דף הבית.html">דף הבית</a>|
+                <a href="אתר הסקי גודאורי.html">אתר הסקי גודאורי</a>|
+                <a href="העברות.html">העברות</a>|
+                <a href="מפת האתר.html">מפת האתר</a>
+            </nav>
+            <form>
+                <input type="search" name="search" placeholder="חפש באתר">
+                <button type="submit">חיפוש</button>
+            </form>
+        </div>
+    </header>
+    <span class="displayno" id="up"></span>
+    <main class="main-content">
+        <img src="../media/MAP.jpg" alt="מפה" /><br />
+        <a href="https://maps.app.goo.gl/8L94YjJQtHmKzz2k8" target="_blank">מיקומנו</a>
+    </main>
+    <div class="up-container">
+        <a href="#up" class="up-link"><img src="../media/UP.jpeg" title="גלילה מעלה" /></a>
+    </div>
+    <div class="audio-container">
+        <audio controls autoplay>
+            <source src="../media/song.mp3" type="audio/mpeg" />
+        </audio>
+    </div>
+    <footer>
+        &copy; כל הזכיות שמורות
+        <span>פתוחים לקהל בימי א-ה מ9:00 בבוקר ועד 10:00 בלילה </span>
+        <a href="mailto:service@skideal.co.il" target="_blank">יצירת קשר במייל</a> <br />
+    </footer>
+</body>
+</html>

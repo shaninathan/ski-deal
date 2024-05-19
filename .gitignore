@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ski-deal/FileContentIndex
+/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1
+/פרוייקט1/bin
+/פרוייקט1/obj

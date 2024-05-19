@@ -1,0 +1,284 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../media/back/snow covered mountain peaks caucasus stock photo 1263031108 _ shutterstock.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    font-family: sans-serif;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0 16px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header {
+    min-height: 80px;
+    background-color: rgba(192, 192, 192, 0.9);
+    color: #717181;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+    header .container {
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    header nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0 5px;
+    }
+
+        header nav a:hover {
+            color: #717181;
+        }
+
+displayno {
+    display: none;
+}
+
+
+
+.strip {
+    min-height: 250px;
+    color: #717181;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videos {
+    width: 600px;
+    height: 390px;
+    margin-top: 80px;
+}
+
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(192, 192, 192, 0.9);
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+    footer span {
+        display: inline-block;
+        border-radius: 15%;
+        padding: 5px 10px;
+        margin: 10px;
+        background-color: transparent;
+    }
+
+    footer a {
+        margin: 10px;
+    }
+
+    footer * {
+        vertical-align: middle;
+    }
+
+
+@keyframes colorChange {
+    0% {
+        background-color: #f5f5f5; /* לבן אפרפר */
+    }
+
+    16.66% {
+        background-color: #dcdcdc; /* אפור בהיר */
+    }
+
+    33.33% {
+        background-color: #b0c4de; /* כחול אפור בהיר */
+    }
+
+    50% {
+        background-color: #d3d3d3; /* אפור בהיר */
+    }
+
+    66.66% {
+        background-color: #778899; /* כחול אפור כהה */
+    }
+
+    83.33% {
+        background-color: #c0c0c0; /* אפור */
+    }
+
+    100% {
+        background-color: #a9a9a9; /* אפור כהה */
+    }
+}
+
+
+
+main {
+    min-height: 200px;
+    color: #000000;
+}
+
+    main .container {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main a {
+        text-decoration: none;
+        padding: 4px 12px;
+        tab-size: 6px;
+        color: black;
+    }
+
+        main a:hover {
+            color: white;
+        }
+
+    main .box1 {
+        width: 30%;
+        background: #b7bed7;
+        padding: 4px 5px;
+        margin: 20px;
+        text-align: center;
+        box-shadow: 5px 5px 15px -5px #000000;
+        border-radius: 20px;
+        animation: colorChange 10s infinite;
+    }
+
+.logo img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+span {
+    border-radius: 30px;
+    border: none;
+    background-color: #808080;
+}
+
+@media screen and (max-width:600px) {
+    main .box1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    main .nav {
+        width: 100%;
+    }
+
+    header nav {
+        display: flow-root;
+    }
+
+    .logo img {
+        margin-bottom: 20px;
+    }
+
+    header form {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media screen and (max-width:800px) {
+    main .box1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    main .nav {
+        width: 100%;
+    }
+
+
+    header form {
+        top: 0;
+    }
+
+    .logo img {
+        margin-bottom: 20px;
+        max-width: 10%;
+    }
+
+    header form {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header .simun {
+        display: block;
+    }
+}
+
+.up-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.up-link img {
+    width: 50px;
+    height: auto;
+    border-radius: 70px;
+}
+
+@media screen and (max-width: 600px) {
+    .videos {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+    .up-link img {
+        width: 15px;
+        height: auto;
+        border-radius: 70px;
+    }
+   .strip{
+       padding-top:250px;
+   }
+    .sizfooter {
+        width: 100%;
+    }
+}
